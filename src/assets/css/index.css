@@ -1,0 +1,73 @@
+.App {
+  background-color: #f5f5f5;
+  padding: 20px;
+  color: #444444;
+}
+
+.income-outcome-card {
+  margin: 20px 0;
+}
+
+.balance-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.balance-info-description {
+  margin-top: -20px;
+}
+
+.oi-list {
+  margin: 25px 0;
+}
+
+.income-list {
+  padding: 0 0 0 10px;
+}
+
+.outcome-list {
+  padding: 0 10px 0 0;
+}
+
+.oili {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.oili-description-part {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px 20px;
+}
+
+.oili-description {
+  color: #444444;
+  font-weight: 500;
+}
+
+.oili-date {
+  font-weight: 300;
+}
+
+.oili-amount-part {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.oili-amount-selected {
+  font-weight: bold;
+}
+
+.oili-amount-unselected {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+
+.outcome-switch {
+  width: 35px;
+}
