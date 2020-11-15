@@ -1,19 +1,39 @@
 {
   "dependencies": {
     "antd": "latest",
-    "gh-pages": "3.1.0",
     "moment": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "7.2.2",
+    "react-scripts": "^4.0.0",
     "redux": "4.0.5"
   },
   "keywords": [],
   "name": "cash-flow-calc",
+  "version": "0.1.0",
   "description": "Cash Flow Calculator",
   "homepage": "http://thatismybad.github.io/cash-flow-calc",
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
