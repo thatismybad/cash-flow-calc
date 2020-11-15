@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Modal, InputNumber, Row, Col, Card, PageHeader, Button } from "antd";
+import { Modal, InputNumber, Row, Col, PageHeader, Button } from "antd";
 import { DollarCircleOutlined } from "@ant-design/icons";
 import BalanceInfo from "./components/BalanceInfo";
 import IncomeList from "./components/IncomeList";
-import OutcomeList from "./components/OutcomeList";
+import ExpenseList from "./components/ExpenseList";
 import { updateInitialAccountBalance } from "./actions";
 
 const App = ({
@@ -14,7 +14,7 @@ const App = ({
 }) => {
   const showModal = () => {
     Modal.confirm({
-      title: "Nastavení počátečního stavu",
+      title: "Zadej počáteční stav",
       icon: <DollarCircleOutlined />,
       content: (
         <div>
@@ -41,10 +41,10 @@ const App = ({
           <Col span={11}>
             <BalanceInfo
               value={currentAccountBalance.toFixed(2)}
-              title="Budoucí stav"
+              title="Vypočítaný stav"
             />
           </Col>
-          <Col span={2}>
+          <Col span={1} offset={1}>
             <Button
               size="large"
               type="primary"
@@ -57,7 +57,7 @@ const App = ({
       </PageHeader>
       <Row>
         <Col span={12}>
-          <OutcomeList />
+          <ExpenseList />
         </Col>
         <Col span={12}>
           <IncomeList />

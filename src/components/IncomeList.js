@@ -16,8 +16,8 @@ const IncomeList = ({ data, changeInclude, changeSelectedAmount }) => {
   );
 
   return (
-    <div className="oi-list income-list">
-      <Typography.Title level={3}>Moje příjmy</Typography.Title>
+    <div className="ei-list income-list">
+      <Typography.Title level={3}>Příjmy</Typography.Title>
       <Card>
         <List
           itemLayout="horizontal"

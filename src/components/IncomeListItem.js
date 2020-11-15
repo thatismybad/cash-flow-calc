@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Typography, Switch } from "antd";
 import { CloseOutlined, CheckOutlined } from "@ant-design/icons";
 
@@ -19,7 +19,7 @@ export default function IncomeListItem({
   } = data;
 
   return (
-    <div className="oili">
+    <div className="eili">
       <Switch
         size="small"
         checkedChildren={<CheckOutlined />}
@@ -27,32 +27,34 @@ export default function IncomeListItem({
         defaultChecked={isIncluded}
         onChange={(value) => onIncludeChange(id, value)}
       />
-      <div className="oili-description-part">
+      <div className="eili-description-part">
         <Typography.Text className="oili-description">
           {description}
         </Typography.Text>
-        <Typography.Text className="oili-date" type="secondary">
+        <Typography.Text className="eili-date" type="secondary">
           {date}
         </Typography.Text>
       </div>
-      <div className="oili-amount-part">
+      <div className="eili-amount-part">
         <Typography.Text
-          className={
+          className={`${
             !isAlternativeSelected
-              ? "oili-amount-selected"
-              : "oili-amount-unselected"
+              ? "eili-amount-selected"
+              : "eili-amount-unselected"
           }
+         eili-amount`}
           onClick={() => onSelectedAmountClick(id, 0)}
         >
           {amount} Kč
         </Typography.Text>
         {isAlternativePossible && (
           <Typography.Text
-            className={
+            className={`${
               isAlternativeSelected
-                ? "oili-amount-selected"
-                : "oili-amount-unselected"
+                ? "eili-amount-selected"
+                : "eili-amount-unselected"
             }
+         eili-amount`}
             onClick={() => onSelectedAmountClick(id, 1)}
           >
             {altAmount} Kč

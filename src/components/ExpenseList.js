@@ -1,19 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Typography, Card, List } from "antd";
-import OutcomeListItem from "./OutcomeListItem";
+import ExpenseListItem from "./ExpenseListItem";
 import { changeInclude } from "../actions";
-import { OUTCOME } from "../constants";
+import { EXPENSE } from "../constants";
 import { sortByDate } from "../utils/sort";
 
-const OutcomeList = ({ data, changeInclude }) => {
+const ExpenseList = ({ data, changeInclude }) => {
   const renderItem = (item) => (
-    <OutcomeListItem data={item} onIncludeChange={changeInclude} />
+    <ExpenseListItem data={item} onIncludeChange={changeInclude} />
   );
 
   return (
-    <div className="oi-list outcome-list">
-      <Typography.Title level={3}>Moje výdaje</Typography.Title>
+    <div className="ei-list expense-list">
+      <Typography.Title level={3}>Výdaje</Typography.Title>
       <Card>
         <List
           itemLayout="horizontal"
@@ -27,15 +27,15 @@ const OutcomeList = ({ data, changeInclude }) => {
 
 const mapStateToProps = (state) => {
   return {
-    data: state.outcomeData
+    data: state.expenseData
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     changeInclude: (id, value) =>
-      dispatch(changeInclude({ id, value, type: OUTCOME }))
+      dispatch(changeInclude({ id, value, type: EXPENSE }))
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(OutcomeList);
+export default connect(mapStateToProps, mapDispatchToProps)(ExpenseList);
