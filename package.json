@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "antd": "latest",
+    "gh-pages": "3.1.0",
     "moment": "latest",
     "react": "latest",
     "react-dom": "latest",
@@ -9,5 +10,10 @@
   },
   "keywords": [],
   "name": "cash-flow-calc",
-  "description": "Cash Flow Calculator"
+  "description": "Cash Flow Calculator",
+  "homepage": "http://thatismybad.github.io/cash-flow-calc",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
 }
