@@ -17,7 +17,7 @@
   margin-top: -20px;
 }
 
-.oi-list {
+.ei-list {
   margin: 25px 0;
 }
 
@@ -25,17 +25,17 @@
   padding: 0 0 0 10px;
 }
 
-.outcome-list {
+.expense-list {
   padding: 0 10px 0 0;
 }
 
-.oili {
+.eili {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.oili-description-part {
+.eili-description-part {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -43,31 +43,36 @@
   padding: 5px 20px;
 }
 
-.oili-description {
+.eili-description {
   color: #444444;
   font-weight: 500;
 }
 
-.oili-date {
+.eili-date {
   font-weight: 300;
 }
 
-.oili-amount-part {
+.eili-amount-part {
   display: flex;
   flex-direction: column;
   text-align: right;
   align-items: flex-end;
 }
 
-.oili-amount-selected {
+.eili-amount-selected {
   font-weight: bold;
 }
 
-.oili-amount-unselected {
+.eili-amount-unselected {
   color: #aaaaaa;
   font-weight: 300;
 }
 
-.outcome-switch {
+.eili-amount:hover {
+  cursor: pointer;
+  color: #1890ff;
+}
+
+.expense-switch {
   width: 35px;
 }

@@ -1,2 +1,2 @@
 export const INCOME = "INCOME";
-export const OUTCOME = "OUTCOME";
+export const EXPENSE = "EXPENSE";

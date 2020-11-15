@@ -4,9 +4,9 @@ import {
   CHANGE_IS_INCLUDED,
   CHANGE_IS_ALTERNATIVE,
   REMOVE_INCOME,
-  ADD_OUTCOME,
-  EDIT_OUTCOME,
-  REMOVE_OUTCOME,
+  ADD_EXPENSE,
+  EDIT_EXPENSE,
+  REMOVE_EXPENSE,
   UPDATE_INITIAL_ACCOUNT_BALANCE,
   UPDATE_CURRENT_ACCOUNT_BALANCE
 } from "../constants/actionTypes";
@@ -31,16 +31,16 @@ export function removeIncome(payload) {
   return { type: REMOVE_INCOME, payload };
 }
 
-export function addOutcome(payload) {
-  return { type: ADD_OUTCOME, payload };
+export function addExpense(payload) {
+  return { type: ADD_EXPENSE, payload };
 }
 
-export function editOutcome(payload) {
-  return { type: EDIT_OUTCOME, payload };
+export function editExpense(payload) {
+  return { type: EDIT_EXPENSE, payload };
 }
 
-export function removeOutcome(payload) {
-  return { type: REMOVE_OUTCOME, payload };
+export function removeExpense(payload) {
+  return { type: REMOVE_EXPENSE, payload };
 }
 
 export function updateInitialAccountBalance(payload) {
